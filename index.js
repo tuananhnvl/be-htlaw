@@ -6,7 +6,10 @@ import UserRoute from "./view-be/routes/UserRoute.js";
 dotenv.config();
 const app = express();
 
-app.use(cors({ credentials:true, origin:true}));
+//app.use(cors({ credentials:true, origin:true}));
+app.use(cors({
+    origin: 'https://fe-htlaw.vercel.app/'
+}));
 app.use(cookieParser());
 app.use(express.json());
 app.use(UserRoute);
