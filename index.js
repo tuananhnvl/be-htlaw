@@ -9,7 +9,7 @@ const app = express();
 //app.use(cors({ credentials:true, origin:true}));
 app.use(cors({
     origin: ['https://fe-htlaw.vercel.app','https://server-htlaw.onrender.com'],
-    methods: ["GET","POST"],
+    methods: ["GET","POST","OPTIONS","PUT","PATCH","DELETE"],
     credentials: true
 }));
 
