@@ -2,7 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 import cors from "cors";
-import UserRoute from "./view-be/routes/UserRoute.js";
+import UserRoute from "./view-BE/routes/UserRoute.js";
 dotenv.config();
 const app = express();
 
