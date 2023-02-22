@@ -25,6 +25,7 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(UserRoute);
 app.get('/', (req, res) => {
-    res.send('Hello, server!');
+    const myCookie = req.cookies.myCookieName;
+  res.send(`The value of my cookie is ${myCookie}`);
 })
 app.listen(5000, ()=> console.log('Server up and running..on 5000.'));
